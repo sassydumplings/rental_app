@@ -7,10 +7,12 @@ class Building
     @has_doorman = has_doorman
     @is_walkup = is_walkup
     @num_floors = num_floors
-    @apartments = []
+    @apartments = {}
   end
 
   def to_s
-    "the #{@style} building at #{@address} has #{@apartments.count} apartments"
+    "The #{@style} building at #{@address} has #{@apartments.count} apartments"
   end
 end
+
+# want to add new buildings and people to buildings
